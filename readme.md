@@ -1,4 +1,4 @@
-#	Input List - a simple input list
+#	Input List
 
 ## A ridiculously simple input list made with HTML table tags and Bootstrap styling.
 
