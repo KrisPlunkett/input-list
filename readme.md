@@ -10,6 +10,9 @@
 * Looks ok on mobile / switches to landscape!
 * It's free as dirt!
 
-### Technologies("barely")
+### Technologies
 * HTML
 * Bootstrap
+
+### Next
+* Integrate MEAN stack to store values, save input lists, add and delete
