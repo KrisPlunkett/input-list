@@ -2,6 +2,8 @@
 
 > A ridiculously simple input list 
 
+![Screenshot](/InputList.png "DEMO")
+
 ## <a href="http://krisplunkett.github.io/input-list/">DEMO</a>
 
 ### Features
