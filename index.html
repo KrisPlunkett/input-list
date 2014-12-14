@@ -17,23 +17,42 @@
 
   </head>
   <body>
-  	<h1>Input List</h1>
-	<div class="table-responsive">
-	<table class="table table-bordered table-striped table-hover">
-	<tr>
-		<th>#</th>
-		<th>Label</th>
-		<th>Mic/DI</th>
-	</tr>
-	
-	<!-- HTML Shell for each input
-	<tr>
-		<td>1</td>
-		<td><input type="text" name="label1" placeholder="AP vox"></td>
-		<td><input type="text" name="mic1" placeholder="Beta 87a"></td>
-	</tr>
-	-->
+  <div class="container">
+  	<div class="row">
+  		<div class="col-md-12">
+  			<h1 class="text-left">Input List</h1>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="table-responsive">
+			<table class="table table-bordered table-striped table-hover" id="inputList">
+				<tbody>
+				<tr>
+					<th>#</th>
+					<th>Label</th>
+					<th>Mic/DI</th>
+				</tr>
+				<tr id="nextInput">
+						
+				</tr>
+			<!-- HTML Shell for each input
+			<tr>
+				<td>1</td>
+				<td><input type="text" name="label1" placeholder="AP Vox"></td>
+				<td><input type="text" name="mic1" placeholder="Beta 87a"></td>
+			</tr>
+			-->
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<!-- Adds an input on each click -->
+			<button type="button" class="btn btn-primary" onclick="addInput()"><span class="glyphicon glyphicon-plus"></span> Add input</button>
+		</div>
+	</div>
 
-</table>
+<script src="myscript.js"></script>
 </body>
 </html>
