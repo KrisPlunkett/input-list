@@ -15,6 +15,8 @@
 ### Technologies
 * HTML
 * Bootstrap
+* Javascript 
+* jQuery(as soon as I learn it!)
 
 ### Next
 * Integrate MEAN stack to store values, save input lists, add and delete
