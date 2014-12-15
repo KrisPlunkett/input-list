@@ -37,7 +37,18 @@ function addInput () {
 	// assigns a mic/line to that <td>
 	micLine.innerHTML = newInput.mic;
 
-	//increment inputNumber by 1
+	//increment inputNumber by 1 (each click)
 	inputNumber++;
+}
+
+function removeInput() {
+	// remove <tr> only if above the <th> row (0)
+	if (inputNumber-1 > 0){
+		inputTable.deleteRow(inputNumber-1);
+	//decrement inputNumber by 1 (each click)
+	inputNumber--;
+	} else {
+		return;
+	}
 }
 
