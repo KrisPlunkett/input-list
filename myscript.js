@@ -6,18 +6,20 @@
 // Global variables
 var inputNumber = 1;	
 var inputTable = document.getElementById('inputList');
+var labelInput = document.createElement("INPUT");
+var micLineInput = document.createElement("INPUT");
+labelInput.setAttribute("type","text");
+micLineInput.setAttribute("type","text");
 
 // Input object constructor
-function input (number, label, mic) {
+function input (number) {
 	this.number = number;
-	this.label = label;
-	this.mic = mic;
 }
 
 // Add a new input
 function addInput () {
 	// create a new input object with the input number, an empty label, and an empty mic/line
-	var newInput = new input(inputNumber, "", "");
+	var newInput = new input(inputNumber);
 	
 	// create a new <tr> element in the inputList table
 	var row = inputTable.insertRow(inputNumber);
@@ -29,16 +31,20 @@ function addInput () {
 	
 	// create a new <td> element for the label
 	var label = row.insertCell(1);
-	// assigns a label to that <td>
-	label.innerHTML = newInput.label; 
+	// places an <input> box inside of the above created <td>
+	label.innerHTML = labelInput; 
 
 	// create a new <td> element for the mic/line
 	var micLine = row.insertCell(2);
-	// assigns a mic/line to that <td>
-	micLine.innerHTML = newInput.mic;
+	// places an <input> box inside of the above created <td>
+	micLine.innerHTML = micLineInput;
 
 	//increment inputNumber by 1 (each click)
 	inputNumber++;
+
+	console.log(channel.innerHTML);
+	console.log(label.innerHTML);
+	console.log(micLine.innerHTML)
 }
 
 function removeInput() {
@@ -51,4 +57,6 @@ function removeInput() {
 		return;
 	}
 }
+
+
 
