@@ -34,24 +34,31 @@ function addInput () {
 	// create a new <td> element for the label
 	var label = row.insertCell(1);
 	// places an <input> box inside of the above created <td>
-	label.innerHTML = labelInput; 
+	label.appendChild(labelInput);
 
 	// create a new <td> element for the mic/line
 	var micLine = row.insertCell(2);
 	// places an <input> box inside of the above created <td>
-	micLine.innerHTML = micLineInput;
+	micLine.appendChild(micLineInput);
 
 	//increment inputNumber by 1 (each click)
 	inputNumber++;
+
+	//display increased inputs
+	console.log("Total inputs = "+(inputNumber-1));	
 }
 
 function removeInput() {
 	// remove <tr> only if above the <th> row (0)
 	if (inputNumber-1 > 0){
 		inputTable.deleteRow(inputNumber-1);
-		
+
 	//decrement inputNumber by 1 (each click)
 	inputNumber--;
+
+	//display decreased inputs
+	console.log("Total inputs = "+(inputNumber-1));	
+
 	} else {
 		return;
 	}
