@@ -18,6 +18,7 @@ function input (number) {
 
 // Add a new input
 function addInput () {
+
 	// create a new input object with the input number, an empty label, and an empty mic/line
 	var newInput = new input(inputNumber);
 	
@@ -26,6 +27,7 @@ function addInput () {
 	
 	// create a new <td> element for the channel number
 	var channel = row.insertCell(0);
+
 	// assigns channel number to that <td>
 	channel.innerHTML = inputNumber;
 	
@@ -41,16 +43,13 @@ function addInput () {
 
 	//increment inputNumber by 1 (each click)
 	inputNumber++;
-
-	console.log(channel.innerHTML);
-	console.log(label.innerHTML);
-	console.log(micLine.innerHTML)
 }
 
 function removeInput() {
 	// remove <tr> only if above the <th> row (0)
 	if (inputNumber-1 > 0){
 		inputTable.deleteRow(inputNumber-1);
+		
 	//decrement inputNumber by 1 (each click)
 	inputNumber--;
 	} else {
