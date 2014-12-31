@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   	<title>Input List</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
    	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -37,12 +37,14 @@
 	<div class="row">
 		<div class="col-md-12">
 			<!-- Adds an input on each click -->
-			<button type="button" class="btn btn-primary" onclick="addInput()"><span class="glyphicon glyphicon-plus"></span> Add input</button>
-			<button type="button" class="btn btn-danger" onclick="removeInput()"><span class="glyphicon glyphicon-minus"></span> Remove input</button>
+			<button type="button" class="btn btn-primary" id="addButton"><span class="glyphicon glyphicon-plus"></span> Add input</button>
+			<button type="button" class="btn btn-danger" id="removeButton"><span class="glyphicon glyphicon-minus"></span> Remove input</button>
 		</div>
 	</div>
-
+<!-- Javascript file
 <script src="myscript.js"></script>
+-->
+
 <script src="my_jquery.js"></script>
 </body>
 </html>
